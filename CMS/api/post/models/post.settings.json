@@ -1,0 +1,88 @@
+{
+  "kind": "collectionType",
+  "collectionName": "posts",
+  "info": {
+    "name": "Post",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Title (EN)": {
+      "type": "string",
+      "required": true
+    },
+    "Title (AR)": {
+      "type": "string",
+      "required": true
+    },
+    "Featured Images": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "Scientific Name (EN)": {
+      "type": "string"
+    },
+    "Scientific Name (AR)": {
+      "type": "string"
+    },
+    "Diet (EN)": {
+      "type": "string"
+    },
+    "Diet (AR)": {
+      "type": "string"
+    },
+    "Max Size (EN)": {
+      "type": "string"
+    },
+    "Fun Facts (EN)": {
+      "type": "richtext"
+    },
+    "Max Size (AR)": {
+      "type": "string"
+    },
+    "Fun Facts (AR)": {
+      "type": "richtext"
+    },
+    "Video": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "Conservation Status": {
+      "type": "enumeration",
+      "enum": [
+        "Not Evaluated",
+        "Data Deficient",
+        "Least Concern",
+        "Near Threatened",
+        "Vulnerable",
+        "Endangered",
+        "Critically Endangered",
+        "Extinct in the Wild",
+        "Extinct"
+      ]
+    },
+    "Location": {
+      "type": "component",
+      "repeatable": false,
+      "component": "map.map"
+    },
+    "screen": {
+      "via": "posts",
+      "model": "screen"
+    }
+  }
+}

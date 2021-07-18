@@ -1,0 +1,108 @@
+.container {
+  
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.backToHome {
+  margin: 3rem 0 0rem 0rem;
+}
+
+.roundedCornersBox ,.roundedCornersBoxAR{
+  border-radius: 20px;
+  background-color: white;
+  display: inline-block;
+  padding:.3rem .7rem ;
+  font-size: 25px;
+ position: absolute;right:3rem;
+ top:3rem;
+}
+.roundedCornersBox {
+ float:right
+ 
+}
+
+.touchIcon {
+  text-align: center;
+  top: 3rem;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+.roundedCornersBoxAR {
+  float:left
+  
+ }
+
+.rightsRecievedDiv {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: #1478B0;
+  text-align: center;
+  color: white;
+  font-family: 'Helvetica';
+  font-size: 20px;
+  line-height:   27.44px;
+  letter-spacing: 1px;
+  position: fixed;
+    bottom: 0;
+    width: 100%;
+ 
+}
+@media(min-width:3840px){
+  .rightsRecievedDiv {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: #1478B0;
+    text-align: center;
+    color: white;
+    font-family: 'Helvetica';
+    font-size: 22px;
+    line-height:   27.44px;
+    letter-spacing: 1px;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+  }
+  .roundedCornersBox ,.roundedCornersBoxAR{
+    padding:1rem 3.7rem ;
+  }
+  .homebtn{
+    width: 87px !important;
+  }
+  .engname{
+font-size: 45px;
+  }
+  .arname{
+    font-size: 45px;
+  }
+}
+
+.urlNoDecoration {
+  text-decoration: none;
+}
+
+.urlNoDecoration:hover { 
+  text-decoration: none; 
+} 
+.homebtn{
+  width: 45px;
+}
+.engname,.arname{
+  font-style: normal;
+font-weight: normal;
+color: #007293
+}
+.barcolor{
+  color: #007293;
+}

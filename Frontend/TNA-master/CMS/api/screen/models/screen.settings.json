@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "screens",
+  "info": {
+    "name": "Screen",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Name (EN)": {
+      "type": "string"
+    },
+    "posts": {
+      "collection": "post",
+      "via": "screen"
+    },
+    "room": {
+      "via": "screens",
+      "model": "room"
+    },
+    "Name (AR)": {
+      "type": "string"
+    }
+  }
+}

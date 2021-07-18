@@ -1,0 +1,30 @@
+{
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@fluentui/react-northstar": "^0.53.0",
+    "@material-ui/core": "^4.11.3",
+    "gray-matter": "^4.0.2",
+    "next": "^10.0.0",
+    "next-compose-plugins": "^2.2.1",
+    "next-images": "^1.7.0",
+    "next-react-svg": "^1.1.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-image-gallery": "^1.0.9",
+    "react-infinite-scroll-component": "^6.0.0",
+    "react-markdown": "^5.0.3",
+    "react-player": "^2.9.0",
+    "react-scroll-to-bottom": "^4.1.0",
+    "react-tooltip": "^4.2.15",
+    "redux": "^4.0.5",
+    "use-fit-text": "^2.4.0",
+    "video-react": "^0.14.1"
+  }
+}

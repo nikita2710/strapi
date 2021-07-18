@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_map_maps",
+  "info": {
+    "name": "Map",
+    "icon": "globe-americas",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "Geographical Range (EN)": {
+      "type": "string",
+      "required": true
+    },
+    "Geographical Range (AR)": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
