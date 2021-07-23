@@ -181,7 +181,7 @@ const Screen = (props) => {
 };
 
 Screen.getInitialProps = async ({ query }) => {
-    const lang = query.lang;
+    const lang = query.lang.toUpperCase();
     const roomName = query.room;
     const screenName = query.screen;
     var names = null;

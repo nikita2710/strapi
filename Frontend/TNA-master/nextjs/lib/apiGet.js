@@ -6,7 +6,7 @@ export async function getRoomsFromAPI() {
 }
 
 export async function getRoom(name) {
-    const rooms = JSON.parse(JSON.stringify(await getRoomsFromAPI()));
+    const rooms = Object.values(await getRoomsFromAPI());
     var roomObject = {};
     roomObject = rooms.filter(room => room.Title.toLowerCase() == name.toLowerCase())[0]
     // rooms.forEach(room => {
